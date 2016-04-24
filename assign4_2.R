@@ -1,3 +1,12 @@
+#######################################################################################################
+PROBLEM STATEMENT:
+
+Choose the two models from Exercise 1 that gave the lowest CV error. For each model, use the
+bootstrap method to estimate the 95% error-confidence interval. Use b = 100; i.e. construct
+100 different bootstrap samples. For each model, list all 100 model errors. Based on the two
+confidence intervals, which model would you select for deployment?
+#####################################################################################################
+
 ques2=function(dataset,svm)
 {
   result=c()
