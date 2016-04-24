@@ -1,3 +1,28 @@
+#1. This exercise pertains to the data in file exercise-1.csv.
+a. Use R’s plot function to plot each (x1, x2) pair, labeling each point in the +1 class with
+a “+”, and each point in the −1 class with an open circle. Does the data appear linearly
+separable?
+b. For the data, compute c+, c−, cmid, and c+ − c− (see Section 4.2).
+c. Use the vectors from the previous part to classify each observation in exercise-1.csv.
+Report on the classification accuracy (i.e. percentage correct).
+d. Use the vectors from part b to predict the class for the observation (x1, x2) = (2, 2).
+2. This exercise pertains to the data in file exercise-2.csv.
+1
+a. For the data, compute c+, c−, cmid, and c+ − c− (see Section 4.2). Assume that males
+represent class +1, while females represent class −1.
+b. Use the vectors from the previous part to classify each observation in exercise-2.csv.
+Report on the classification accuracy (i.e. percentage correct).
+c. Use the vectors from part a to classify Pat, who is 62 inches tall, weighs 125 pounds, and
+is 45 years old.
+3. This exercise pertains to the mammographic mass data set (with missing-data observations
+removed) from Programming Assignment 1
+a. For the data, compute c+, c−, cmid, and c+ −c− (see Section 4.2). Assume that severity-1
+observations represent class +1, while severity-0 observations epresent class −1.
+b. Use the vectors from the previous part to classify each observation in exercise-2.csv.
+Report on the classification accuracy (i.e. percentage correct).
+c. Use the vectors from part a to classify a mass that has attribute values (5, 60, 1, 5, 3)
+#
+
 classification<-function(x)
 {
 	c_plus=c()
