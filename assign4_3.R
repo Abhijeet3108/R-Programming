@@ -1,3 +1,13 @@
+####################################################################################################
+PROBLEM STATEMENT:
+
+Provide confusion matrices for the two models from Exercise 2, when tested against the original
+data set. Calculate the average loss for both models, if false negatives are assigned a loss of
+5.0, while false positives are assigned a loss of 1.0. Assume true positives and negatives are
+assigned zero loss.
+
+##################################################################################################
+
 ques3=function(dataset)
 {
   
