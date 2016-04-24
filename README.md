@@ -1,2 +1,3 @@
 # R-Programming
-Assignments related to R-programming model generation and testing
+This repository contains the assignments related to data-modelling and predications using R-programming language.
+
