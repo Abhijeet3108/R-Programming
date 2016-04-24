@@ -1,3 +1,17 @@
+#########################################################################################################3
+PROBLEM STATEMENT:
+
+Review and download the mammographic mass data set at https://archive.ics.uci.edu/ml/datasets/Mammographic+Mass
+Using R, load the data set into a data frame a create 4 × 6 = 24 different svm models of this
+data, where each model can be characterized as an element from the set
+{(n, C)|1 ≤ n ≤ 4 and C = 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0}.
+1
+Here n represents the degree of a polynomial classifier (note: for n = 1, use a linear classifier),
+and C represents the slack cost for a soft-margin classifier. Provide a table that, for each
+model, provides its model error (when trained and tested on the entire data set) and its 10-fold
+cross-validation error.
+#######################################################################################################
+
 ques1<-function(dataset)
 {
 	k=1
