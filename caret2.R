@@ -15,13 +15,15 @@ caret2<-function(leaf){
   
   ctrl = trainControl(method="repeatedcv", number=10, repeats=5, selectionFunction = "oneSE")
   #Controls the computational parameters of the train function such as selection function, method etc.
-  
+ 
+ ################DATA PARTITIONING##################### 
   Train = createDataPartition(leaf$Class, p=.75, list=FALSE)
    #Creating a data partition of the 208 total observations, so that 75% are used for training 
   #(as indicated by p-value, and the rest 25% for testing purposes.
   
   test = leaf[-in_train,] # Vector test stores 25% of the observations for just testing purposes. 
   
+  ##################DATA TRAINING##########################
   ###For Random Forests#####
   trf = train(Class ~.,data=leaf, method="rf", metric="Kappa",trControl=ctrl, subset = Train)
   #Train the data based on the training dataset with other parameters mentioned such as tuneLength, preprocessing 
@@ -34,10 +36,12 @@ caret2<-function(leaf){
   print(tgbm)
    #Similarly, train the data using the Gradient boosting machines.
    
+   ###############COMPARISON OF THE TWO APPROACHES######################
   compare = resamples(list(RF = trf,GBM = tgbm))  #Comparison betwwen the trf and tgbm
   difValues = diff(compare) 
   print(summary(difValues)) #Print the summary of comparison
   
+  #################DATA PREDICTION ####################
   test$pred.leaf.rf = predict(trf, test, "raw") #Based on the above comparison the best one is chosen which happens to be the RF.
   confusionMatrix(test$pred.leaf.rf, test$Class)  #Print out the confusion Matrix
   varImp(trf, scale=FALSE)  
