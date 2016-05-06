@@ -21,3 +21,18 @@ print("CONFUSION MATRIX 2 FOR (c,N)=(10000,3)")
 print(conf2)
 
 }
+
+
+###################OUTPUT##################3
+
+[1] "CONFUSION MATRIX 1 FOR (c,N)=(1000,2)"
+   
+      0   1
+  0 466  55
+1	50 390
+
+[1] "CONFUSION MATRIX 2 FOR (c,N)=(10000,3)"
+   
+      0   1
+  0 470  54
+1	46 391
