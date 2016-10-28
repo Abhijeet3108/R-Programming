@@ -1,3 +1,6 @@
+
+##### INDEPENDENT MONTE CARLO SIMULATION OF A POWER PLANT ============
+
 daily_power=function()
 {
   
