@@ -1,3 +1,10 @@
+###########################################################
+
+A quadcopter simulator written in R programming that takes input various parameters such as angular velocity, thrust, rotation matrix
+etc. and generates an animation of trajectory that the quadcopter will assume based on the same. An OOP based approach was followed 
+with the help of S4 classes provided by R.
+
+###########################################################
 Quadcopter<- setClass(
   # Set the name for the class
   "Quadcopter",
